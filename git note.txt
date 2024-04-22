@@ -1,0 +1,89 @@
+# To get the version of git
+git --version
+# to check the current directory
+pwd
+# to navigate different directory
+cd name of directory
+# create a new directory
+mkdir name of folder
+# to go back one step back
+cd ..
+# to go back two directories
+cd ../..
+# to go the directory where the git terminal is
+cd ~
+# to go the new folder created
+cd Desktop/gittest
+# to create a file in your directory
+touch foorloop.py
+# to see the files in your directory
+ls
+# to rename your file in your dirrectory
+mv foorloop.py newforloop.py
+# creating a new directory inside a directory
+mkdir gittest2
+# seing folders and files in a directory
+ls
+#creating a file in a directory inside a directory
+touch gittest2/ whileloop.py
+#Copy a file fom a directory to the pprevious directory
+cp whileloop.py ..
+# to delete a file in current directory
+rm whileloop.py
+# to delete an existing folder
+rm -rf gittest2/
+# to delete a folder you are working in you need to go back to the previous directory then delete
+cd ..
+rm -rf gittest
+# to clear the commands on the page
+clear
+
+
+#### CREATING A GIT REPOSITORY
+# switching to another disk
+cd f:
+ mkdir git-training-v1
+cd git-training-v1
+touch ex1-forloop.py
+ls
+touch ex2-dfunction.py
+# creagting the repo
+git init  ----this will create a .git in the folder making it a git repository(note it might be an hidden item)
+git status  ---- to check the status of our git repo
+# opening your git on vscode
+code git-training-v1/
+# opening your git on vscode from the git repository
+code .
+
+
+### MAKING A FIRST COMMIT
+#adding the git files to the staging area
+git add filenames
+git status
+# to unstatge a  file
+git rm --cached filename
+#Making the first Commit
+git commit -m "Ist commit"   -m is used to type a message
+git config --global user.email "your email"
+git config --global user.name   "your name"
+#to confirm 
+git config --global user.email or git config --global user.name for either of them
+After the user name and Email
+git commit -m "Ist commit" (Note that all this is done in the git repository)
+# to check the history
+git log or git log --oneline
+
+
+#### GIT HISTORY
+git status
+
+#####using VS CODE TO COMMIT.
+when a modification has occured
+git status
+git add filename
+git status
+git commit(type in commit statement in vs code. save file and close it.)
+
+# checking the git config text editor on vs code
+code ~/.gitconfig
+git config --global --unset core.editor (removes the text editor)
