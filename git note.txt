@@ -104,3 +104,20 @@ on linux/git: cat giftgithubkey.pub
 
 # to push a folder that was created locally to your github after init,add, commit have been done on that folder,
 git remote add origin https://github.com/giftyoyo/refresher-repo2.git  ##refresher-repo2 was the folder created locally, i create an empty repo on github and then run the line of code at the begining.
+
+to create other brnaches , use git checkout -b 'name of your branch'
+to move between branches git checkout name of your branch
+ git branch shows you a list of your brnaches
+
+ git diff shows the different versions of the code and changes made between branches 
+ e.g git diff feature-readme-instructions (this will show the difference between the existing branches)
+
+ once you are done merging your feature branch with yur main or master you should delete it
+ git branch -d feature-readme-instructions
+
+ git commit -am "" --- works only for modified files you can add and commit at once
+
+ git RESET helps you undo a commit or modification
+
+ hit RESET ~HEAD helps reset a step Higher
+
