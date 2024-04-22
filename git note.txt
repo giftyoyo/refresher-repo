@@ -87,3 +87,20 @@ git commit(type in commit statement in vs code. save file and close it.)
 # checking the git config text editor on vs code
 code ~/.gitconfig
 git config --global --unset core.editor (removes the text editor)
+
+
+
+#####YOUTBE GIT TUTORIAL
+code for generating your ssh key for your github account on cmd
+ssh-keygen -t rsa -b 4096 -C "giftidigbe@gmail.com"
+
+to check your key 
+on linux: ls |grep giftgithubkey
+on windows: dir |findstr giftgithubkey
+
+to see the content of your giftgithubkey.pub
+on windows: type giftgithubkey.pub
+on linux/git: cat giftgithubkey.pub
+
+# to push a folder that was created locally to your github after init,add, commit have been done on that folder,
+git remote add origin https://github.com/giftyoyo/refresher-repo2.git  ##refresher-repo2 was the folder created locally, i create an empty repo on github and then run the line of code at the begining.
